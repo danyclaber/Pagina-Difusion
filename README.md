@@ -14,11 +14,13 @@ El objetivo principal de esta página es brindar una plataforma atractiva y fác
 
 La página está estructurada en varias secciones clave para ofrecer una experiencia informativa completa:
 
-- **Inicio:** Presentación general con información sobre la misión, visión, historia y noticias relevantes de la tienda.
-
-- **Inicio de sesión y registro:** Formularios para que los usuarios puedan acceder a su cuenta o crear una nueva. En esta versión estática, estos formularios son simulados, pero el diseño está preparado para integrar funcionalidades futuras de backend.
+- **Inicio:** Presentación general con información sobre la misión, visión, historia y noticias relevantes de la tienda. 
 
 - **Novedades:** Muestra productos recientes y categorías, manteniendo a los visitantes informados sobre las últimas actualizaciones de la tienda.
+
+- **Productos:** Sección diseñada para enlazar a un catálogo de productos (por implementar).
+
+- **Inicio de sesión y registro:** Formularios para que los usuarios puedan acceder a su cuenta o crear una nueva. En esta versión estática, estos formularios son simulados, pero el diseño está preparado para integrar funcionalidades futuras de backend.
 
 ---
 ### 📋 Vista previa de algunas secciones
