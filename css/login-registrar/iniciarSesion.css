@@ -1,0 +1,163 @@
+/* Estilo del ícono grande de inicio de sesión */
+.l-icon {
+    font-size: 5rem;
+    color: hsl(209, 61%, 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* Imagen lateral de fondo en el formulario de inicio de sesión */
+.side-image {
+    background-image: url("/img/login.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+/* Contenedor del formulario a la derecha de la imagen */
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Contenedor del formulario de entrada */
+.input-box {
+    width: 350px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Logo sobre la imagen de login */
+.imgLogo-login {
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* Título (header) dentro del formulario */
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* Contenedor de cada campo de entrada */
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px;
+    margin-top: 1rem;
+}
+
+/* Estilos del input de texto */
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+
+/* Posicionamiento del label dentro del input */
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Animación del label cuando el input está enfocado */
+.input-field input:focus ~ label {
+    top: -10px;
+    font-size: 13px;
+}
+
+/* Animación del label cuando el input tiene contenido válido */
+.input-field input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+
+/* Borde del input al estar enfocado o ser válido */
+.input-field .input:focus,
+.input-field .input:valid {
+    border-bottom: 1px solid var(--clr-2);
+}
+
+/* Botón de envío */
+.submit {
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 45px;
+    background: hsl(209, 61%, 30%);
+    border-radius: 5px;
+    transition: .4s;
+    letter-spacing: 0.2rem;
+}
+
+/* Efecto hover del botón de envío */
+.submit:hover {
+    background: var(--clr-2);
+    color: #fff;
+}
+
+/* Texto debajo del formulario (¿Olvidaste tu contraseña?) */
+.signin {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+}
+
+/* Enlaces dentro del texto de recuperación */
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media only screen and (max-width: 768px) {
+    /* Aumenta el ancho del formulario en pantallas pequeñas */
+    .input-box {
+        width: 450px;
+        box-sizing: border-box;
+    }
+
+    /* Oculta el logo en móviles */
+    .imgLogo-login {
+        display: none;
+    }
+
+    /* Ajusta el tamaño y posición de la imagen de fondo en móviles */
+    .side-image {
+        height: 200px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .tab-title{
+        font-size: 0.55rem;
+    }
+}

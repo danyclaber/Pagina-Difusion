@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Carga de fuentes y estilos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Estilos personalizados del sitio -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Título de la pestaña -->
+    <title>Página de Inicio</title>
+</head>
+
+<body>
+    <!-- ▸ INICIO: Sección de encabezado principal -->
+    <header id="inicio">
+
+        <!-- ▸ NAVBAR: Barra de navegación -->
+        <nav id="nav">
+            <div class="nav-center">
+
+                <!-- ▸ NAV-HEADER: Logo y botón de menú -->
+                <div class="nav-header">
+                    <img src="img/logo.png" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <!-- ▸ ENLACES DE NAVEGACIÓN -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#inicio" class="scroll-link activeLink">Inicio</a>
+                            <div class="dropdown">
+                                <a href="#quienes-somos" class="scroll-link">Quienes Somos</a>
+                                <a href="#noticias" class="scroll-link">Noticias</a>
+                            </div>
+                        </li>
+                        <li><a href="html/novedades-categorias.html">Novedades</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ▸ BOTÓN DE LOGIN / REGISTRO -->
+            <div class="btn btn-white btn-sb">
+                <a href="/html/login-registrar.html" class="login">Ingresar/Registrarse <i class="fas fa-user"></i></a>
+                <div class="dropdown-login">
+                    <a href="#Mi-Perfil">Mi Perfil</a>
+                    <a href="#Cerrar Sesion">CERRAR SESIÓN</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ▸ BANNER PRINCIPAL -->
+        <div class="banner">
+            <div class="container">
+                <h1 class="animate__animated animate__fadeInLeft">Lleva a Bolivia donde estés</h1>
+                <p>#Tienda en línea</p>
+                <a href="#" class="btn btn-white">Ver Productos</a>
+            </div>
+        </div>
+    </header>
+    <!-- ▸ FIN: Sección de encabezado -->
+
+    <!-- ▸ INICIO: Contenido principal -->
+    <main>
+
+        <!-- ▸ SECCIÓN: Quiénes Somos -->
+        <section id="quienes-somos" class="section">
+            <div class="title">
+                <h2>Quiénes <span>Somos</span></h2>
+            </div>
+
+            <div class="about-center container">
+                <!-- Imagen destacada -->
+                <article class="about-img">
+                    <img src="img/quienes-somos.jpg" alt="Quiénes Somos" />
+                </article>
+
+                <article class="about">
+                    <!-- ▸ BOTONES DE TABS (Historia, Misión, Visión) -->
+                    <div class="btn-container">
+                        <button class="tab-btn active" data-id="historia">Historia</button>
+                        <button class="tab-btn" data-id="mision">Misión</button>
+                        <button class="tab-btn" data-id="vision">Visión</button>
+                    </div>
+
+                    <!-- ▸ CONTENIDO DE TABS -->
+                    <div class="about-content">
+                        <!-- ▸ TAB: Historia -->
+                        <div class="content active" id="historia">
+                            <h4>HISTORIA</h4>
+                            <p class="qs-parrafo">
+                                Somos un e-commerce dedicado a la preservación y promoción de la tradición artesanal de
+                                Bolivia,
+                                ofreciendo una variedad de productos únicos hechos a mano por artesanos locales, como
+                                tejidos andinos,
+                                cerámicas, joyería y tallados en madera. Cada pieza refleja la rica historia y cultura
+                                de Bolivia,
+                                llevando consigo la esencia de sus comunidades. Al elegir nuestros productos, no solo
+                                llevas a casa un
+                                fragmento auténtico de Bolivia, sino que también apoyas directamente a los artesanos y
+                                sus economías
+                                locales, ayudando a mantener vivas sus habilidades y tradiciones.
+                            </p>
+                        </div>
+
+                        <!-- ▸ TAB: Misión -->
+                        <div class="content" id="mision">
+                            <h4>MISIÓN</h4>
+                            <p class="qs-parrafo">
+                                Nuestra misión es preservar y promover la herencia cultural de Bolivia a través de la
+                                venta de productos
+                                artesanales auténticos, elaborados por talentosos artesanos locales. Nos comprometemos a
+                                ofrecer una
+                                plataforma que conecte a estos artesanos con un mercado global, valorando y reconociendo
+                                su arte y
+                                esfuerzo. A través de nuestras acciones, buscamos empoderar a las comunidades artesanas,
+                                mejorar sus
+                                condiciones de vida y asegurar que sus tradiciones y conocimientos sigan vivos y
+                                apreciados por las
+                                generaciones presentes y futuras.
+                            </p>
+                        </div>
+
+                        <!-- ▸ TAB: Visión -->
+                        <div class="content" id="vision">
+                            <h4>VISIÓN</h4>
+                            <p class="qs-parrafo">
+                                Nuestra visión es convertirnos en la principal plataforma de comercio electrónico de
+                                productos
+                                artesanales bolivianos, reconocida a nivel mundial por la autenticidad y calidad de
+                                nuestros productos.
+                                Aspiramos a ser un puente cultural que acerque a personas de todo el mundo a las ricas
+                                tradiciones de
+                                Bolivia, fomentando un mayor aprecio por la artesanía y la sostenibilidad. Soñamos con
+                                un futuro donde
+                                los artesanos bolivianos sean valorados y apoyados, permitiéndoles prosperar mientras
+                                continúan
+                                compartiendo su talento y patrimonio cultural con el mundo.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ▸ FIN: Sección Quiénes Somos -->
+
+        <!-- ▸ SECCIÓN: Noticias -->
+        <section id="noticias" class="section">
+            <div class="title">
+                <h2>NOTI<span>CIAS</span></h2>
+            </div>
+
+            <div class="container">
+                <article class="news">
+                    <div class="img-container">
+                        <img src="person-1.jpeg" id="person-img" alt="Imagen de Persona" />
+                    </div>
+                    <h4 id="author">Sara Pérez</h4>
+                    <p id="job">Artesana</p>
+                    <p id="info">[...]</p>
+
+                    <!-- ▸ BOTONES: Noticias anterior / siguiente -->
+                    <div class="button-container">
+                        <button class="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ▸ FIN: Sección Noticias -->
+
+    </main>
+    <!-- ▸ FIN: Contenido principal -->
+
+    <!-- ▸ INICIO: Footer del sitio -->
+    <footer class="section">
+        <p>
+            copyright &copy; Productos Artesanales Bolivia
+            <span id="date"></span>. Todos los derechos reservados
+        </p>
+    </footer>
+    <!-- ▸ FIN: Footer -->
+
+    <!-- ▸ BOTÓN: Volver arriba -->
+    <a class="scroll-link top-link" href="#inicio">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ▸ SCRIPTS JS -->
+    <script src="js/index.js"></script>
+    <script src="js/index/noticias.js"></script>
+    <script src="js/index/quienes-somos.js"></script>
+</body>
+
+</html>

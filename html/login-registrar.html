@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/login-registrar/nav-footer.css">
+    <link rel="stylesheet" href="/css/login-registrar/registrarUsuario.css">
+    <link rel="stylesheet" href="/css/login-registrar/iniciarSesion.css">
+
+    <title>iniciar-sesion/Registrarse</title>
+</head>
+
+<body>
+
+
+    <!-- =================== INICIO DEL HEADER =================== -->
+    <header id="inicio">
+        <!-- Barra de navegación principal -->
+        <nav id="nav">
+            <div class="nav-center">
+                <!-- Encabezado de la navegación: logo y botón de menú responsive -->
+                <div class="nav-header">
+                    <img src="/img/logo.png" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- Enlaces del menú de navegación -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/html/novedades-categorias.html">Novedades</a></li>
+                        <li><a href="#">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Botón de acceso y menú desplegable para el usuario -->
+            <div class="btn-sb btn-white loginActive">
+                <a href="/html/login-registrar.html" class="login">Ingresar/Registrarse <i class="fas fa-user"></i></a>
+                <div class="dropdown-login">
+                    <a href="#Mi-Perfil">Mi Perfil</a>
+                    <a href="#Cerrar Sesion">CERRAR SESIÓN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =================== FIN DEL HEADER =================== -->
+
+    <!-- =================== INICIO DEL CONTENIDO PRINCIPAL =================== -->
+    <main class="container-pagina">
+        <section class="bg-white container-form">
+            <!-- Navegación de pestañas: Iniciar sesión / Registrarse -->
+            <div class="tab-option">
+                <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
+                    <!-- Botón de pestaña: Iniciar Sesión -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active letter-tab" id="tab1-tab" data-bs-toggle="tab"
+                            data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                            <span class="tab-title">INICIAR SESIÓN</span>
+                        </button>
+                    </li>
+                    <!-- Botón de pestaña: Registrarse -->
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link letter-tab" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2"
+                            type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                            <span class="tab-title">REGISTRARSE</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contenido de pestañas -->
+            <div class="tab-content mt-3">
+                <!-- =================== FORMULARIO DE INICIO DE SESIÓN =================== -->
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <article class="bg-white iniciar-sesion">
+                        <div class="row">
+                            <!-- Columna derecha: Formulario -->
+                            <div class="col-md-6 order-md-1 order-2 right">
+                                <div class="input-box">
+                                    <i class="fas fa-key l-icon"></i>
+                                    <form action="" id="formIniciarSesion">
+                                        <!-- Campo: Email -->
+                                        <div class="input-field">
+                                            <input type="email" class="input" id="emailUsuario" name="emailUsuario"
+                                                required autocomplete="off">
+                                            <label for="emailUsuario">Email</label>
+                                        </div>
+                                        <!-- Campo: Contraseña -->
+                                        <div class="input-field">
+                                            <input type="password" class="input" id="password" name="password" required>
+                                            <label for="password">Contraseña</label>
+                                        </div>
+                                        <!-- Botón: Ingresar -->
+                                        <div class="input-field">
+                                            <input type="submit" class="submit" value="Ingresar">
+                                        </div>
+                                        <!-- Enlace: Olvidaste tu contraseña -->
+                                        <div class="signin">
+                                            <span>¿Olvidaste tu contraseña? <a href="#">Ingresa aquí</a></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Columna izquierda: Imagen de login -->
+                            <div class="col-md-6 order-md-2 order-1 side-image">
+                                <img src="/img/logo.png" alt="Logo" class="imgLogo-login">
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- =================== FORMULARIO DE REGISTRO DE CLIENTE =================== -->
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <article class="rounded bg-white perfil-cliente">
+                        <div class="row">
+                            <!-- Columna izquierda: Imagen de perfil -->
+                            <div class="col-md-3">
+                                <div class="d-flex flex-column align-items-center text-center py-5 imagenPerfilCliente">
+                                    <img id="imagenPerfilCliente" class="rounded-circle" width="150px" height="150px"
+                                        style="object-fit: cover;" src="/img/perfil.jpg">
+                                    <span class="p-2 m-2 bg-success badge">CLIENTE</span>
+                                </div>
+                            </div>
+
+                            <!-- Columna derecha: Formulario de registro -->
+                            <div class="col-md-9">
+                                <div class="p-3 py-1">
+                                    <div class="subtitulo-login d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="text">Registrarse</h4>
+                                    </div>
+
+                                    <form action="" method="post" id="formRegistrarCliente"
+                                        enctype="multipart/form-data">
+                                        <!-- Campos: Nombres e Imagen -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="nombreCliente" class="labels">Nombres</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                                    <input type="text" class="form-control" id="nombreCliente"
+                                                        name="nombreCliente" placeholder="Ingresa tus nombres" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="imagenCliente" class="labels">Imagen de Perfil</label>
+                                                <div class="input-group">
+                                                    <input type="file" class="form-control" id="imagenCliente"
+                                                        name="imagenCliente" accept="image/*" required>
+                                                    <span class="input-group-text"><i class="fa fa-upload"></i></span>
+                                                </div>
+                                                <img id="previewImagenCliente" src="" alt="Vista previa"
+                                                    style="display: none; max-width: 100%; margin-top: 10px;">
+                                            </div>
+                                        </div>
+
+                                        <!-- Campos: Apellidos y CI -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="apellidosCliente" class="labels">Apellidos</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-user-tag"></i></span>
+                                                    <input type="text" class="form-control" id="apellidosCliente"
+                                                        name="apellidosCliente" placeholder="Ingresa tus apellidos"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="ciCliente" class="labels">CI</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-id-card"></i></span>
+                                                    <input type="text" class="form-control" id="ciCliente"
+                                                        name="ciCliente" placeholder="Ingresa tu CI" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Campos: Email y Teléfono -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="emailCliente" class="labels">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                                    <input type="email" class="form-control" id="emailCliente"
+                                                        name="emailCliente" placeholder="Ingresa tu email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="numeroContactoCliente" class="labels">Número de
+                                                    Contacto</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                                    <input type="text" class="form-control" id="numeroContactoCliente"
+                                                        name="numeroContactoCliente"
+                                                        placeholder="Ingresa tu número de contacto" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Campos: Sexo y Dirección -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="sexoCliente" class="labels">Sexo</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i
+                                                            class="fa fa-venus-mars"></i></span>
+                                                    <select class="form-select" id="sexoCliente" name="sexoCliente"
+                                                        required>
+                                                        <option value="" disabled selected>Selecciona tu sexo</option>
+                                                        <option value="M">Masculino</option>
+                                                        <option value="F">Femenino</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="direccionCliente" class="labels">Dirección</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i
+                                                            class="fa fa-map-marker-alt"></i></span>
+                                                    <input type="text" class="form-control" id="direccionCliente"
+                                                        name="direccionCliente" placeholder="Ingresa tu dirección"
+                                                        required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Campos: Contraseña y Confirmación -->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="contrasenaCliente" class="labels">Contraseña</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                                    <input type="password" class="form-control" id="contrasenaCliente"
+                                                        name="contrasenaCliente"
+                                                        placeholder="Contraseña (Mín. 8 caracteres, al menos 1 mayúscula y 1 número)"
+                                                        pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                                        title="La contraseña debe tener al menos 8 caracteres, incluyendo al menos una letra mayúscula y un número."
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="confirmarContrasenaCliente" class="labels">Confirmar
+                                                    Contraseña</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                                    <input type="password" class="form-control"
+                                                        id="confirmarContrasenaCliente"
+                                                        name="confirmarContrasenaCliente"
+                                                        placeholder="Confirma tu contraseña" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Botón: Finalizar registro -->
+                                        <div class="mt-4 text-center">
+                                            <button type="submit" class="btn btn-success" id="btnRegistrarCliente"
+                                                name="btnRegistrarCliente">
+                                                Finalizar Registro
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =================== FIN DEL CONTENIDO PRINCIPAL =================== -->
+
+    <!-- =================== INICIO DEL FOOTER =================== -->
+    <footer class="section">
+        <p>
+            copyright &copy; Productos Artesanales Bolivia
+            <span id="date"></span>. Todos los derechos reservados
+        </p>
+    </footer>
+    <!-- =================== FIN DEL FOOTER =================== -->
+
+    <!-- Botón para ir al inicio -->
+    <a class="scroll-link top-link" href="#inicio">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- =================== SCRIPTS =================== -->
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!-- Scripts personalizados -->
+    <script src="/js/index.js"></script>
+    <script src="/js/login-registrar/imagen-perfil.js"></script>
+    <script src="/js/login-registrar/validar-contrasena.js"></script>
+
+
+</body>
+
+</html>

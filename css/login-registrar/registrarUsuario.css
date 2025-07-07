@@ -1,0 +1,122 @@
+/*
+===================================
+ESTILOS DE FORMULARIOS DE AUTENTICACIÓN
+===================================
+*/
+
+/* Estilo activo del botón de login/registro */
+.loginActive {
+  z-index: 100;
+  border: solid var(--clr-2) 2px;
+}
+
+/* Contenedor general del formulario */
+.container-form {
+  padding: 3rem;
+}
+
+/* Espaciado del subtítulo del formulario de registro */
+.subtitulo-login {
+  margin-top: 3rem;
+}
+
+/* Estilo de las pestañas de navegación del formulario */
+.letter-tab {
+  color: var(--clr-3);
+  letter-spacing: var(--spacing);
+  padding: 1rem 0;
+}
+
+/* Estado activo de la pestaña */
+.letter-tab .active {
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+
+/* Bootstrap pills: estilo activo */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: hsl(209, 61%, 40%);
+}
+
+/*
+===================================
+ESTILOS DE CAMPOS DE ENTRADA
+===================================
+*/
+
+/* Estilo de los íconos dentro del input-group */
+.input-group-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  font-size: 1.2rem;
+  border-radius: 0;
+}
+
+/* Inputs sin bordes redondeados */
+.form-control {
+  border-radius: 0;
+}
+
+/* Etiquetas */
+label {
+  letter-spacing: 0.2rem;
+  color: var(--clr-3);
+  margin-bottom: 0.3rem;
+}
+
+/* Separación entre campos */
+.input-group {
+  margin-bottom: 0.8rem;
+}
+
+/* Placeholder de los inputs */
+input::placeholder {
+  font-size: 0.9rem;
+  letter-spacing: 0.0565rem;
+}
+
+/* Espaciado lateral para el formulario de login */
+.formIniciarSesion {
+  padding: 0 2.5rem;
+}
+
+/*
+===================================
+MEDIA QUERIES: RESPONSIVE
+===================================
+*/
+
+@media only screen and (max-width: 768px) {
+
+  /* Ajustes para imagen de perfil en dispositivos móviles */
+  .imagenPerfilCliente {
+    padding-top: 4.5rem !important;
+    padding-bottom: 0 !important;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 920px) {
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .form-select {
+    font-size: 0.7rem;
+  }
+
+  /* Etiquetas */
+  label {
+    font-size: 0.8rem;
+  }
+
+  input[type="file"] {
+    padding: 0.6rem;
+    font-size: 0.7rem;
+  }
+}
