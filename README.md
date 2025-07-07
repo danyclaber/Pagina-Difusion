@@ -16,8 +16,6 @@ La página está estructurada en varias secciones clave para ofrecer una experie
 
 - **Inicio:** Presentación general con información sobre la misión, visión, historia y noticias relevantes de la tienda.
 
-- **Productos:** Catálogo visual donde los usuarios podrán explorar todos los productos disponibles. En esta versión estático, la funcionalidad dinámica está pendiente de implementación.
-
 - **Inicio de sesión y registro:** Formularios para que los usuarios puedan acceder a su cuenta o crear una nueva. En esta versión estática, estos formularios son simulados, pero el diseño está preparado para integrar funcionalidades futuras de backend.
 
 - **Novedades:** Muestra productos recientes y categorías, manteniendo a los visitantes informados sobre las últimas actualizaciones de la tienda.
