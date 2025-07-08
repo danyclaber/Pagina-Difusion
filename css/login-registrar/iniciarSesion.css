@@ -10,7 +10,7 @@
 
 /* Imagen lateral de fondo en el formulario de inicio de sesión */
 .side-image {
-    background-image: url("/img/login.webp");
+    background-image: url("../../img/login.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,13 +80,13 @@
 }
 
 /* Animación del label cuando el input está enfocado */
-.input-field input:focus ~ label {
+.input-field input:focus~label {
     top: -10px;
     font-size: 13px;
 }
 
 /* Animación del label cuando el input tiene contenido válido */
-.input-field input:valid ~ label {
+.input-field input:valid~label {
     top: -10px;
     font-size: 13px;
     color: #5d5076;
@@ -138,6 +138,7 @@ span a:hover {
 
 /* ===================== RESPONSIVE DESIGN ===================== */
 @media only screen and (max-width: 768px) {
+
     /* Aumenta el ancho del formulario en pantallas pequeñas */
     .input-box {
         width: 450px;
@@ -157,7 +158,7 @@ span a:hover {
         margin-top: 1rem;
     }
 
-    .tab-title{
+    .tab-title {
         font-size: 0.55rem;
     }
 }
