@@ -7,7 +7,7 @@ ESTILOS DE FORMULARIOS DE AUTENTICACIÓN
 /* Estilo activo del botón de login/registro */
 .loginActive {
   z-index: 100;
-  border: solid var(--clr-2) 2px;
+  /* border: solid var(--clr-2) 2px; */
 }
 
 /* Contenedor general del formulario */

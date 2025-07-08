@@ -152,13 +152,13 @@ span a:hover {
 
     /* Ajusta el tamaño y posición de la imagen de fondo en móviles */
     .side-image {
-        height: 200px;
+        /* height: 200px; */
         width: 90%;
         margin: 0 auto;
         margin-top: 1rem;
     }
 
     .tab-title {
-        font-size: 0.55rem;
+        font-size: 0.7rem;
     }
 }
