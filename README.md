@@ -1,5 +1,7 @@
 ## 🏠 PROYECTO PÁGINA DE DIFUSIÓN
 
+🔗 🌐 Enlace al proyecto: [https://danyclaber.github.io/Pagina-Difusion/](https://danyclaber.github.io/Pagina-Difusion/)
+
 Este proyecto consiste en una página web estática desarrollada utilizando únicamente **HTML, CSS y JavaScript** con diseño responsivo, cuyo propósito es funcionar como una página de difusión y promoción para una tienda en línea.
 
 ---
