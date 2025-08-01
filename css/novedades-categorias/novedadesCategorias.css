@@ -664,11 +664,11 @@ header {
 }
 
 .prev-btn-p {
-  left: 180px;
+  left: 20px;
 }
 
 .next-btn-p {
-  right: 180px;
+  right: 20px;
 }
 
 .product {
@@ -1050,4 +1050,13 @@ footer p {
   .product-price {
     font-size: 1.05rem;
   }
+
+  
+.prev-btn-p {
+  left: 180px;
+}
+
+.next-btn-p {
+  right: 180px;
+}
 }
